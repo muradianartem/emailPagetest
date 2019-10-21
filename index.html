@@ -9,20 +9,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Order confirmation email</title>
     <style type="text/css">
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: proxima-nova, sans-serif;
-          font-style: normal;
-          font-weight: 400;
+      @font-face {
+        font-family: "proxima-nova-regular";
+        src: url("./fonts/proximanova-regular.eot");
+        src: url("./fonts/proximanova-regular.ttf") format("truetype"),
+          url("./fonts/proximanova-regular.woff") format("woff"),
+          url("./fonts/proximanova-regular.svg") format("svg");
+        font-weight: normal;
+        font-style: normal;
       }
-      p {
-        padding: 0;
-        margin: 0;
+      @font-face {
+        font-family: "proxima-nova-semibold";
+        src: url("./fonts/proximanova-semibold.eot");
+        src: url("./fonts/proximanova-semibold.ttf") format("truetype"),
+          url("./fonts/proximanova-semibold.woff") format("woff"),
+          url("./fonts/proximanova-semibold.svg") format("svg");
+        font-weight: normal;
+        font-style: normal;
       }
     </style>
   </head>
-  <body>
+  <body style="
+    margin: 0;
+    padding: 0;
+    font-family: proxima-nova-regular, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+">
     <img src="./rectangle.svg" alt="" />
     <table style="width: 450px; padding-left: 18px; padding-right: 18px">
       <tr>
@@ -68,6 +81,7 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 1.25;
+    font-family: proxima-nova-semibold, sans-serif;
     text-align: center;
     color: #ffffff;"
           >
@@ -78,7 +92,12 @@
           >
           <a
             href="#"
-            style="color:#0baff0; font-weight: 600; line-height: 1.43; font-size: 14px; text-decoration: none;"
+            style="color:#0baff0;
+            font-weight: 600;
+            line-height: 1.43;
+            font-size: 14px;
+            text-decoration: none;
+            font-family: proxima-nova-semibold,sans-serif"
             >Visit Klickly</a
           >
         </td>
@@ -101,6 +120,7 @@
           color: #000000;
           line-height: 1.29;
           font-weight: 600;
+          font-family: proxima-nova-semibold, sans-serif;
           padding-bottom: 6px;"
         >
           Payment Method
@@ -108,7 +128,7 @@
       </tr>
       <tr>
         <td
-          style="font-size: 14px; color: #4a4a4a; line-height: 1.43; padding-bottom: 6px; "
+          style="font-size: 14px; color: #4a4a4a; line-height: 1.43; "
           colspan="2"
         >
           Paid with Klickly cash
@@ -121,7 +141,7 @@
       </tr>
       <tr>
         <td
-          style="font-size: 14px; color: #4a4a4a; line-height: 1.43; padding-bottom: 6px"
+          style="font-size: 14px; color: #4a4a4a; line-height: 1.43;"
           colspan="2"
         >
           Charged to your Credit Card (4903)
@@ -134,7 +154,7 @@
       </tr>
       <tr>
         <td
-          style="padding-top: 15px; font-size: 14px; color: #000000; line-height: 1.29; font-weight: 600; padding-bottom: 6px; "
+          style="padding-top: 15px; font-family: proxima-nova-semibold, sans-serif; font-size: 14px; color: #000000; line-height: 1.29; font-weight: 600; padding-bottom: 6px; "
         >
           Shipping Address
         </td>
@@ -142,10 +162,11 @@
       <tr>
         <td
           style=" font-size: 14px; color: #4a4a4a; line-height: 1.43; padding-bottom: 6px; "
+          colspan="2"
         >
-          <p class="name">Jimmy Santos</p>
-          <p class="street">4077 Charles ave</p>
-          <p class="city">Culver City, CA 90232</p>
+          <p style="margin: 0;" class="name">Jimmy Santos</p>
+          <p style="margin: 0;" class="street">4077 Charles ave</p>
+          <p style="margin: 0;" class="city">Culver City, CA 90232</p>
         </td>
       </tr>
       <tr>
@@ -155,7 +176,8 @@
       </tr>
       <tr>
         <td
-          style="font-size: 13px; color: #4a4a4a; letter-spacing: 1px; padding-bottom: 20px" colspan="3"
+          style="font-size: 13px; color: #4a4a4a; letter-spacing: 1px; padding-bottom: 20px"
+          colspan="3"
         >
           ORDER SUMMARY
         </td>
@@ -170,7 +192,7 @@
         </td>
         <td style="padding-left: 6px; vertical-align: baseline;">
           <span
-            style="color: #4a4a4a; font-weight: 600; font-size: 16px; line-height: 1.56;"
+            style="color: #4a4a4a; font-weight: 600; font-size: 16px; line-height: 1.56; font-family: proxima-nova-semibold, sans-serif;"
             >YOUR SUPER Tote Bag</span
           >
           <span style="line-height: 1; color: #9b9b9b; font-size: 16px;"
@@ -179,9 +201,9 @@
           <div
             style="line-height: 1.43; font-size: 14px; color: #4a4a4a; padding-top: 10px"
           >
-            <p>Size: Free</p>
-            <p>Color: Natural</p>
-            <p>Material: 100% Cotton</p>
+            <p style="margin: 0;">Size: Free</p>
+            <p style="margin: 0;">Color: Natural</p>
+            <p style="margin: 0;">Material: 100% Cotton</p>
           </div>
         </td>
         <td style="vertical-align: top;">
@@ -238,72 +260,97 @@
           ></span>
         </td>
       </tr>
-        <tr>
-            <td
-                    style="font-size: 16px; color: #4a4a4a;  line-height: 1.13; font-weight: 600; padding-bottom: 15px; "
-                    colspan="2"
-            >
-                Total
-            </td>
-            <td
-                    style="font-size: 16px; color: #4a4a4a;  line-height: 1.13; font-weight: 600; padding-bottom: 15px; float: right;"
-            >
-                <span>$13.99</span> <br />
-            </td>
-        </tr>
-        <tr>
-            <td
-                    style="font-size: 14px; color: #4a4a4a; line-height: 1.33; font-style: italic; "
-                    colspan="2"
-            >
-                Paid with Klickly cash
-            </td>
-            <td
-                    style="font-size: 14px; color: #4a4a4a;  line-height: 1.33; font-style: italic; float: right;"
-            >
-                <span>$10.00</span> <br />
-            </td>
-        </tr>
-        <tr>
-            <td
-                    style="font-size: 12px; color: #4a4a4a; line-height: 1.33; padding-bottom: 6px; font-style: italic"
-                    colspan="2"
-            >
-                Charged to your Credit Card (4903)
-            </td>
-            <td
-                    style="font-size: 14px; color: #4a4a4a; line-height: 1.33; padding-bottom: 6px; font-style: italic; float: right;"
-            >
-                <span>$3.99</span>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3" style="padding: 18px 0">
-                <div style="background: #dfe2e5; height: 1px"></div>
-            </td>
-        </tr>
-        <tr>
-            <td
-                    style="font-size: 13px; color: #4a4a4a; letter-spacing: 1px; padding-bottom: 20px" colspan="3"
-            >
-                CUSTOMER SERVICE            </td>
-        </tr>
-        <tr>
-            <td colspan="3" style="color: #4a4a4a; font-size: 14px; line-height: 1.43; ">
-                For billing enquiries, please contact the
-                <a href="#" style="color:#0baff0; line-height: 1.43; font-size: 14px; text-decoration: none;">Klickly team</a>. For
-                customer service enquiries, please contact MihotchStitch directly:
-            </td>
-        </tr>
+      <tr>
+        <td
+          style="font-size: 16px; color: #4a4a4a;  line-height: 1.13; font-weight: 600; padding-bottom: 15px; font-family: proxima-nova-semibold, sans-serif;"
+          colspan="2"
+        >
+          Total
+        </td>
+        <td
+          style="font-size: 16px; color: #4a4a4a;  line-height: 1.13; font-weight: 600; padding-bottom: 15px; font-family: proxima-nova-semibold, sans-serif; float: right;"
+        >
+          <span>$13.99</span> <br />
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="font-size: 14px; color: #4a4a4a; line-height: 1.33; font-style: italic; "
+          colspan="2"
+        >
+          Paid with Klickly cash
+        </td>
+        <td
+          style="font-size: 14px; color: #4a4a4a;  line-height: 1.33; font-style: italic; float: right;"
+        >
+          <span>$10.00</span> <br />
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="font-size: 12px; color: #4a4a4a; line-height: 1.33; padding-bottom: 6px; font-style: italic"
+          colspan="2"
+        >
+          Charged to your Credit Card (4903)
+        </td>
+        <td
+          style="font-size: 14px; color: #4a4a4a; line-height: 1.33; padding-bottom: 6px; font-style: italic; float: right;"
+        >
+          <span>$3.99</span>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" style="padding: 18px 0">
+          <div style="background: #dfe2e5; height: 1px"></div>
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="font-size: 13px; color: #4a4a4a; letter-spacing: 1px; padding-bottom: 20px"
+          colspan="3"
+        >
+          CUSTOMER SERVICE
+        </td>
+      </tr>
+      <tr>
+        <td
+          colspan="3"
+          style="color: #4a4a4a; font-size: 14px; line-height: 1.43; "
+        >
+          For billing enquiries, please contact the
+          <a
+            href="#"
+            style="color:#0baff0; line-height: 1.43; font-size: 14px; text-decoration: none;"
+            >Klickly team</a
+          >. For customer service enquiries, please contact MihotchStitch
+          directly:
+        </td>
+      </tr>
 
-        <tr>
-            <td colspan="3" style="color: #4a4a4a; font-size: 14px; line-height: 1.43; padding: 30px 0 30px 10px">
-                <p>Email - <a href="#" style="color:#0baff0; line-height: 1.43; font-size: 14px; text-decoration: none;">mithotchstitch@yahoo.com </a></p>
-                <p>Phone - (310) 736-0676</p>
-                <p>Site - <a href="#" style="color:#0baff0; line-height: 1.43; font-size: 14px; text-decoration: none;">myhotchstitch.com</a></p>
-            </td>
-        </tr>
-
+      <tr>
+        <td
+          colspan="3"
+          style="color: #4a4a4a; font-size: 14px; line-height: 1.43; padding: 20px 0 30px 10px"
+        >
+          <p style="margin: 0;">
+            Email -
+            <a
+              href="#"
+              style="color:#0baff0; line-height: 1.43; font-size: 14px; text-decoration: none;"
+              >mithotchstitch@yahoo.com
+            </a>
+          </p>
+          <p style="margin: 0;">Phone - (310) 736-0676</p>
+          <p style="margin: 0;">
+            Site -
+            <a
+              href="#"
+              style="color:#0baff0; line-height: 1.43; font-size: 14px; text-decoration: none;"
+              >myhotchstitch.com</a
+            >
+          </p>
+        </td>
+      </tr>
     </table>
   </body>
 </html>
